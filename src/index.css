@@ -66,3 +66,309 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.filter-nav a {
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #555;
+  background-color: #f2f2f2;
+  transition: all 0.25s ease;
+}
+
+.filter-nav a:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+/* Active NavLink (React Router v6) */
+.filter-nav a.active {
+  background-color: #4f46e5; /* indigo */
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3);
+}
+
+/* ===== App Layout ===== */
+.app {
+  max-width: 650px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* ===== Navigation ===== */
+.filter-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-nav a {
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #eee;
+  color: #333;
+  transition: 0.3s;
+}
+
+.filter-nav a.active {
+  background: #4f46e5;
+  color: #fff;
+}
+
+.filter-nav select {
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+/* ===== Form ===== */
+.todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.todo-form input,
+.todo-form select {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.todo-form button {
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Search ===== */
+.todo-search {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Todo List ===== */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.todo-item:hover {
+  background: #f1f1f1;
+}
+
+.todo-content {
+  flex: 1;
+}
+
+.todo-content p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.todo-content small {
+  margin-right: 8px;
+  font-size: 12px;
+}
+
+/* ===== Priority Colors ===== */
+.priority.high {
+  color: red;
+  font-weight: bold;
+}
+
+.priority.medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.priority.low {
+  color: green;
+  font-weight: bold;
+}
+
+/* ===== Buttons ===== */
+.todo-item button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.todo-item button:hover {
+  transform: scale(1.1);
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  margin-bottom: 10px;
+  background: #fafafa;
+  border-radius: 14px;
+}
+
+.todo-left {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.todo-content p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.todo-content small {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+.priority.high {
+  color: red;
+}
+
+.priority.medium {
+  color: orange;
+}
+
+.priority.low {
+  color: green;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.edit-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  background: #fafafa;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* LEFT SIDE */
+.todo-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.todo-text {
+  font-weight: 500;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* TAGS */
+.tag {
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tag.category {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.tag.priority.high {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.tag.priority.medium {
+  background: #ffedd5;
+  color: #ea580c;
+}
+
+.tag.priority.low {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* ACTIONS */
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-actions button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.todo-actions button:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* EDIT MODE */
+.edit-row {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
